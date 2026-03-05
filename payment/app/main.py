@@ -9,7 +9,7 @@ from app.core.dep_kafka import Producer
 import json
 from fastapi.templating import Jinja2Templates
 
-# This is your test secret API key.
+# This is our test secret API key.
 stripe.api_key = str(setting.STRIPE_SECRET_KEY)
 app = FastAPI(root_path="/payment-service",root_path_in_servers=True)
 
